@@ -5,10 +5,12 @@ const ImageOfDay = ({ images }) => {
   return (
     <div className="card">
       <p>Copyright: {images.copyright}</p>
-      <p>Date {images.date}</p>
-      <p>Title {images.title}</p>
+      <p>Date: {images.date}</p>
+      <p>
+        <span className="underline">Title</span> <br /> {images.title}
+      </p>
       <img src={images.hdurl} alt={images.name} />
-      <p>{images.explanation}</p>
+      <p className="img-explanation">{images.explanation}</p>
     </div>
   );
 };

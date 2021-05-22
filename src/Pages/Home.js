@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ImageOfDay from "../Components/ImageOfDay";
+import Footer from "../Components/Footer";
 
 const Home = () => {
   const [data, setData] = useState([]);
@@ -20,11 +21,18 @@ const Home = () => {
       <div className="container">
         <h1>Home</h1>
         <p>Click below for the image of the day from NASA!</p>
+        <h6>
+          Data comes from the{" "}
+          <a href="https://api.nasa.gov/" target="_blank">
+            NASA API
+          </a>
+        </h6>
         <hr />
         <button className="button-primary" onClick={handleClick}>
           {showImage ? "Hide" : "Show"} Image
         </button>
         {showImage && <ImageOfDay images={data} />}
+        <Footer />
       </div>
     </div>
   );

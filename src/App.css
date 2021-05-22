@@ -3,6 +3,13 @@
   margin-top: 3rem;
 }
 
+.underline {
+  border-bottom: 5px solid #33c3f0;
+  width: 50%;
+  display: flex;
+  margin: 5rem auto;
+}
+
 .card {
   margin: 2rem 0rem;
   padding: 2rem;
@@ -10,6 +17,10 @@
   border-bottom: 2rem solid #33c3f0;
   border-right: 2rem solid #33c3f0;
   box-shadow: 7px 6px 5px 0px rgba(1, 1, 1, 0.2);
+}
+
+.img-explanation {
+  margin-top: 2rem;
 }
 
 img {
